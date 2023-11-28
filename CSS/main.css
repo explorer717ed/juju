@@ -1,17 +1,36 @@
+/* *{
+  outline: 1px solid red;
+} */
 html, body{
   margin: 0;
   padding: 0;
 }
 
 .logo {
-  width: 284px;
+  width: 144px;
 }
 
+@media screen and (min-width: 900px) {
+  .logo{
+    width: 284px;
+
+  }
+}
+
+
+
 .header-wrap{
-  padding: 38px 75px 17px;
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding: 16px 12px 11px;
+}
+
+@media screen and (min-width: 900px) {
+  .header-wrap{
+    padding: 38px 75px 17px;
+
+  }
 }
 
 .header-wrap::after{
@@ -37,26 +56,64 @@ html, body{
 }
 
 .header-search-container{
-  height: 45px;
-  width: 242px;
+  height: 35px;
+  width: calc(100% - 42px);
   border: transparent;
   background-color: #F6F6F6;
   padding-left: 19px;
 }
 
+@media screen and (min-width: 900px) {
+  .header-search-container{
+    height: 45px;
+    width: 242px;
+  }
+}
+
 .header-search-handler{
-  height: 49px;
+  height: 35px;
   background-color: #E4E4E4;
-  padding: 5px 8px 5px 12px;
+  padding: 5px;
   border: none;
   cursor: pointer;
 }
 
+.header-search-handler img{
+  height: 26px;
+}
+
+@media screen and (min-width: 900px) {
+  .header-search-handler{
+    height: 49px;
+    padding: 5px 8px 5px 12px;
+    height: 39px;
+  }
+}
+
 .manage-container{
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   gap: 24px;
   padding: 0;
+  margin: 0;
+  height: 50px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 900px) {
+  .manage-container{
+    width: initial;
+    position: initial;
+    height: initial;
+  }
+  
 }
 
 .manage-container li {
@@ -68,6 +125,7 @@ html, body{
 .manage-container .qa img{
   height: 36px;
 }
+
 
 .manage-container .vector img{
   padding: 6px;
@@ -86,8 +144,9 @@ html, body{
 
 footer{
   width: 100%;
-  height: 55px;
+  height: 80px;
   background-color: #2B2722;
+  margin-bottom: 55px;
 }
 
 footer p{
@@ -98,63 +157,123 @@ footer p{
   line-height: 23px;
   padding-top: 20px;
 }
+
+@media screen and (min-width: 900px) {
+  footer{
+    width: 100%;
+    height: 55px;
+    background-color: #2B2722;
+    margin-bottom: 0px;
+  }
+  
+}
+
 .notice{
   text-align: center;
   height: 87px;
   margin-bottom: 47px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .notice span{
   color: #2B2722;
   font-weight: 700;
-  font-size: 65px;
-  line-height: 87px;
   display: inline-block;
   vertical-align: top;
+  font-size: 20px;
 }
 .notice img{
-  width: 87px;
+  width: 44px;
+}
+
+@media screen and (min-width: 900px) {
+  .notice span{
+    font-size: 65px;
+    line-height: 87px;
+  }
+
+  .notice img{
+    width: 87px;
+  }
 }
 
 .info-wrap{
   border: 1px solid #777;
-  border: 1px solid #777;
+  width: calc(100% - 20px);
+  margin: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 75px;
-  width: calc(100% - 150px);
+  box-sizing: border-box;
 }
 
+@media screen and (min-width:900px) {
+  .info-wrap{
+    margin: 0 75px;
+    flex-wrap: nowrap;
+    width: calc(100% - 150px);
+  }
+}
+
+
+.info-about{
+  display: flex;
+  
+}
 
 .info-time img,.info-location img{
   height: 35px;
 }
+
 .info-time,.info-location{
-  width: 205px;
+  width: 50%;
   text-align: center;
   padding:10px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
-.info-time{
-  border-left: 1px solid #777;
-  border-right: 1px solid #777;
+
+@media screen and (min-width: 900px) {
+  .info-time{
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+  }
+  .info-time,.info-location{
+    width: 205px;
+  }
 }
 
 
 .info-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
   width: 100%;
-  padding-left: 73px;
-  padding-right: 67px;
+  padding: 10px;
+  border-top: 1px solid #777;
 }
+
+@media screen and (min-width: 900px) {
+  .info-container{
+    padding-left: 73px;
+    padding-right: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border:none
+  }
+}
+
 
 .info-services-list{
   display: flex;
+  flex-wrap: wrap;
   gap: 23px;
+  margin-bottom: 10px;
 }
+
 
 .info-services-list a{
   text-decoration: none;
@@ -167,6 +286,7 @@ footer p{
 
 .info-external{
   display: flex;
+  justify-content: center;
   gap: 26px;
 }
 .info-external a{

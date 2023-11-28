@@ -2,6 +2,7 @@
   margin: auto;
   padding-top: 26px;
   padding-bottom: 17px;
+  overflow-x: scroll;
 }
 
 .nav-wrap ul {
@@ -11,7 +12,9 @@
   margin: 0 auto;
   width: fit-content;
   padding: 0;
+  white-space: nowrap;
 }
+
 
 .nav-wrap ul li{
   cursor: pointer;
@@ -19,8 +22,14 @@
 
 .swiper {
   width: 100%;
-  height: calc(100vh - 218px);
-  min-height: 752px;
+  height: 30vh;
+}
+
+@media screen and (min-width: 900px) {
+  .swiper{
+    min-height: 752px;
+    height: calc(100vh - 218px);
+  }
 }
 
 .swiper img{
@@ -41,9 +50,11 @@
   padding: 0;
   margin-top: 124px;
   margin-bottom: 39px;
+  overflow-x: auto;
 }
 
 .campaign-head li{
+  white-space: nowrap;
   padding: 8px 40px;
   background-color: #E4E4E4;
   border-radius: 5px 5px 0px 0px;
@@ -63,8 +74,15 @@
 }
 
 .campaign-container{
-  margin: 0px 117px 0px 195px;  
+  margin: 0px
 }
+
+@media screen and (min-width: 900px){
+  .campaign-container{
+    margin: 0px 117px 0px 195px;  
+  }  
+}
+
 
 .campaign-container-label{
   font-size: 24px;
@@ -101,17 +119,26 @@
   display: flex;
   flex-wrap: wrap;
   gap: 36px;
+  padding: 10px;
 }
 
 .campaign-container-product-item{
   box-sizing: border-box;
-  width: 25px;
+  width: 100%;
   min-width: 273px;
   padding: 19px;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
   position: relative;
 }
+
+@media screen and (min-width: 900px) {
+  .campaign-container-product-item{
+    width: 250px;
+  }
+}
+
+
 
 .campaign-container-product-item img{
   width: 100%;
@@ -168,22 +195,36 @@
  }
 
  .intro-card-container{
-  margin: 0px 134px  0px 178px 
+  margin: 0px; 
  }
+
+ @media screen and (min-width: 900px){
+  .intro-card-container{
+    margin: 0px 117px 0px 195px;  
+  }  
+}
+
 
  .intro-card{
   margin-bottom: 64px;
-  display: flex;
-  min-height: 548px;
  }
 
- .intro-card div{
-  width: 100%;
+ @media screen and (min-width: 900px){
+   .intro-card{
+    display: flex;
+    min-height: 548px;
+   }
  }
 
- .intro-card div img{
-  width: 100%;
- }
+ @media screen and (min-width: 900px){
+  .intro-card div{
+    width: 100%;
+   }
+  }
+  
+  .intro-card div img{
+   width: 100%;
+  }
 
  .intro-card-ctx{
   padding: 30px;
@@ -244,18 +285,35 @@
  .about-container{
   display: flex;
   justify-content: space-around;
-  margin: 0px 117px 0px 195px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width:900px) {
+  .about-container{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 117px 0px 195px;
+   }
+  
  }
 
  .about-item{
-  width: 223px;
+  width: 50%;
+ }
+
+ @media screen and (min-width:900px) {
+  .about-item{
+    width: 223px;
+   }
  }
 
  .about-item p{
   margin-top: 0;
- }
+}
 
- .about-item p:nth-child(2){
+.about-item p:nth-child(2){
+  white-space: nowrap;
   font-size: 25px;
   letter-spacing: 1.25px;
  }
@@ -270,3 +328,17 @@
   width: 100%;
  }
 
+
+ .discount{
+  position: relative;
+ }
+
+ .discount::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:  8px;
+  height: 1px; 
+  background-color: #777;
+ }
