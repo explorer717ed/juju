@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>部落格 | 陶朱行 Tao Chu Liquor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./CSS/bs-overwrite.css">
+  <link rel="stylesheet" href="./CSS/normalize.css">
+  <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="stylesheet" href="./CSS/blogList.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-wrap">
+    <div class="header-search">
+      <a href="/">
+        <img src="./images/logo.svg" alt="陶朱行 Tao Chu Liquor" class="logo">
+      </a>
+      
+      <div class="header-search-wrap">
+        <input type="text" class="header-search-container" placeholder="search some...">
+
+        <button type="submit" class="header-search-handler">
+          <img src="./images/zoomin-icon.svg" alt="">
+        </button>
+      </div>
+
+    </div>
+
+    
+    <ul class="manage-container">
+     <li class="qa">
+        <img src="./images/faq-icon.svg" alt="">
+        <p>常見問題</p>
+      </li>
+      
+      <li class="vector">
+        <img src="./images/Vector.svg" alt="">
+        <p>註冊／登入</p>
+      </li>
+
+      <li class="shopping">
+        <img src="./images/shoping-bag.svg" alt="">
+      </li>
+    </ul>
+    
+  </header>
+  <nav class="nav-wrap">
+    <ul>
+      <li><a href="/juju/products.html">最新消息</a></li>
+      <li><a href="/juju/blogList.html" class="nav-active">部落格</a></li>
+      <li><a href="/juju/products.html">六大基酒</a></li>
+      <li><a href="/juju/products.html">香甜酒</a></li>
+      <li><a href="/juju/products.html">葡萄酒</a></li>
+      <li><a href="/juju/products.html">其他酒類</a></li>
+      <li><a href="/juju/products.html">無酒精</a></li>
+      <li><a href="/juju/products.html">食品</a></li>
+      <li><a href="/juju/products.html">器具杯皿</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <nav class="nav-breadcrumb" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">首頁</a></li>
+        <li class="breadcrumb-item active" aria-current="page">部落格</li>
+      </ol>
+    </nav>
+    <h1>部落格</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3 blog-sidemenu">
+          <div class="sidemenu-title mb-2">分類</div>
+          
+          <ul class="nav flex-column tree-cat">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">朱朋酒友台中飲酒指南</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">分類1</a>
+            </li>
+            <li class="nav-item">
+              <p class="d-inline-flex gap-1">
+                <a class="nav-link" data-bs-toggle="collapse" href="#collapseSubcat" aria-expanded="false" aria-controls="collapseSubcat">
+                  分類2
+                </a>
+              </p>
+              <div class="collapse" id="collapseSubcat">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">子分類A</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">子分類B</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-9">
+
+          <div class="row">
+            <div class="col-sm-6 col-xl-4">
+              <div class="card blog-card">
+                <img class="card-img-top" src="./images/article1.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">
+                    <small class="text-muted">2024/02/12</small>
+                    <small class="text-danger float-end">分類Ａ</small>
+                  </p>
+                  <h5 class="card-title">
+                    <a href="/">#朱朋酒友台中飲酒指南 — 野人会所</a>
+                    
+                  </h5>
+                  <p class="card-text">推開看起來平凡到不行的住宅鐵門，完全沒想到映入眼簾的會是石子地板跟露營桌椅</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+  
+
+
+  <div class="notice">
+    <span>禁止酒駕</span>
+    <img src="./images/icons/wlogo.svg" alt="">
+    <span>未滿十八歲者禁止飲酒</span>
+  </div>
+
+  <div class="info-wrap">
+    <div class="info-about">
+      <div class="info-location">
+        <p>營業時間</p>
+        <img src="./images/icons/time.svg" alt="">
+        <p>11:00 – 21:00
+          （週六14:00開始營業）</p>
+      </div>
+  
+      <div  class="info-time">
+        <p>營業地點</p>
+        <img src="./images//icons/location.svg" alt="">
+        <p>403台灣台中市西區
+          明義街46號</p>
+      </div>
+    </div>
+    
+    <div class="info-container">
+      <div class="info-services">
+        <p>客戶服務</p>
+        <div class="info-services-list">
+          <a href="#">聯絡我們</a>
+          <a href="#">購物須知</a>
+          <a href="#">企業與商家合作</a>
+          <a href="#">配送及退貨服務</a>
+        </div>
+        
+      </div>
+      
+      <div class="info-external">
+        <a href="#">
+          <img src="./images//icons/icon_Instagram.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images//icons/icon_Facebook.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images//icons/icon_Line.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>
+      ©Tao Chu Liquor, 2023. ALL RIGHTS RESERVED.
+    </p>
+  </footer>
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

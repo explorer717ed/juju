@@ -1,0 +1,27 @@
+.page-content h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blog-sidemenu .sidemenu-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tree-cat{
+  --bs-nav-link-padding-x: 0;
+}
+
+.blog-sidemenu .nav-item{
+  border-top: 1px solid #BABAB9;
+  --bs-nav-link-padding-y: 1rem; 
+}
+
+.blog-card .card-title{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.blog-card .card-text{
+  font-size: .875rem;
+}
