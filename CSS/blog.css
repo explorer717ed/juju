@@ -25,3 +25,21 @@
 .blog-card .card-text{
   font-size: .875rem;
 }
+
+
+
+
+/* Article */
+.page-blog-article .article-main img{
+  width: 100%;
+}
+
+.block-bottom{
+  padding: 0 75px;
+}
+
+.block-bottom section{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #BABAB9;
+}
