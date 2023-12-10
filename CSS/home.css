@@ -74,7 +74,7 @@
 }
 
 .campaign-container{
-  margin: 0px
+  margin: 0px 30px;
 }
 
 @media screen and (min-width: 900px){
@@ -260,10 +260,9 @@
  }
 
  .about-wrap{
-  border-top: 1px solid #777;
-  border-bottom: 1px solid #777;
-  padding-top: 73px;
-  padding-bottom: 56px;
+  /* border-top: 1px solid #777;
+  border-bottom: 1px solid #777; */
+  padding: 73px 30px 56px;
   text-align: center;
  }
 
@@ -326,6 +325,7 @@
 
  .about-item img{
   width: 100%;
+  max-width: 140px;
  }
 
 

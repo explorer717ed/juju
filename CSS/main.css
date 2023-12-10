@@ -65,7 +65,7 @@ html, body{
 
 @media screen and (min-width: 900px) {
   .header-search-container{
-    height: 45px;
+    height: 50px;
     width: 242px;
   }
 }
@@ -84,9 +84,8 @@ html, body{
 
 @media screen and (min-width: 900px) {
   .header-search-handler{
-    height: 49px;
+    height: 50px;
     padding: 5px 8px 5px 12px;
-    height: 39px;
   }
 }
 
@@ -123,7 +122,8 @@ html, body{
 }
 
 .manage-container .qa img{
-  height: 36px;
+  padding: 6px;
+  height: 26px;
 }
 
 
@@ -132,7 +132,8 @@ html, body{
   height: 24px;
 }
 .manage-container .shopping img{
-  height: 39px;
+  padding: 6px;
+  height: 26px;
 }
 
 .primary-gray{
