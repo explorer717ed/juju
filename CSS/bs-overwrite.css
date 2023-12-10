@@ -1,0 +1,9 @@
+:root{
+  --bs-link-color: #000;
+
+}
+
+.form-check-input:checked {
+  background-color: #000;
+  border-color: #000;
+}

@@ -1,0 +1,72 @@
+.btn-secondary.btn-chip{
+  --bs-btn-padding-y: .25rem;
+  --bs-btn-padding-x: .5rem;
+  --bs-btn-font-size: .75rem;
+  --bs-btn-color: #000;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #777;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #eee;
+  --bs-btn-hover-border-color: #565e64;
+}
+
+.filtered-items .btn-link{
+  --bs-btn-font-size: .75rem;
+}
+
+main.page-content{
+  background: #F9F9F9;
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05) inset;
+  padding: 0 75px 200px;
+}
+
+.page-content .breadcrumb{
+  padding-top: 1rem;
+}
+
+.page-content .breadcrumb a{
+  color: #000;
+}
+
+.page-content h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-content .nav-cat{
+  margin-bottom: 50px;
+  --bs-link-color: #82807E;
+  --bs-link-hover-color: #000;
+}
+
+.page-content .nav-cat .nav-item{
+  min-width: 100px;
+  text-align: center;
+}
+
+.menu-filter{
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-bg: transparent;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-body-padding-x: 0;
+}
+
+.menu-filter .accordion-body{
+  font-size: 0.75rem;
+}
+
+.menu-filter .form-check-label{
+  margin-bottom: 0.5rem;
+}
+
+.list-toolbar{
+  margin: 1rem 0;
+  font-size: .75rem;
+}
+
+.list-toolbar .form-select{
+  display: inline;
+  width: auto;
+  font-size: .75rem;
+}
