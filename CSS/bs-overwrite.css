@@ -1,6 +1,16 @@
 :root{
   --bs-link-color: #000;
+  --bs-link-color-rgb: 50,50,50;
+  --bs-link-hover-color-rgb: 0,0,0;
 
+  --bs-danger: #E83129;
+  --bs-danger-rgb: 232, 49, 41;
+}
+
+
+.btn-danger {
+  --bs-btn-bg: #E83129;
+  --bs-btn-border-color: #E83129;
 }
 
 .form-check-input:checked {

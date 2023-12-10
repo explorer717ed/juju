@@ -4,9 +4,15 @@
 html, body{
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans TC', 'Battambang', 'Times New Roman', Times, serif;
+  font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
 }
 
+.style-font{
+  font-family: 'Battambang', 'Times New Roman', Times, serif;
+}
+
+
+/* Header */
 .logo {
   width: 144px;
 }
@@ -91,7 +97,7 @@ html, body{
 }
 
 
-
+/* Header Menu */
 .nav-wrap{
   margin: auto;
   overflow-x: auto;
@@ -127,6 +133,31 @@ html, body{
   border-bottom: 1px solid rgba(0,0,0,1);
 
 }
+
+
+/* Main Page Content */
+
+main.page-content{
+  background: #F9F9F9;
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05) inset;
+  padding: 0 75px 200px;
+}
+
+.page-content .breadcrumb{
+  padding-top: 1rem;
+}
+
+.page-content .breadcrumb a{
+  color: #000;
+}
+
+.nav-breadcrumb{
+  --bs-breadcrumb-divider: '>';
+}
+
+
+
+
 .manage-container{
   position: fixed;
   bottom: 0px;
@@ -185,6 +216,8 @@ html, body{
   color: #E83129;
 }
 
+
+/* Footer */
 footer{
   width: 100%;
   height: 80px;
@@ -211,6 +244,7 @@ footer p{
   
 }
 
+/* Footer Warning */
 .notice{
   text-align: center;
   height: 87px;
@@ -243,10 +277,10 @@ footer p{
   }
 }
 
+
+/* Footer Info */
 .info-wrap{
-  border: 1px solid #777;
-  width: calc(100% - 20px);
-  margin: 10px;
+  border-top: 1px solid #777;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -256,9 +290,7 @@ footer p{
 
 @media screen and (min-width:900px) {
   .info-wrap{
-    margin: 0 75px;
     flex-wrap: nowrap;
-    width: calc(100% - 150px);
   }
 }
 
@@ -343,6 +375,7 @@ footer p{
 }
 
 
+/* Card Product */
 .card-product{
   box-sizing: border-box;
   width: 100%;
@@ -359,8 +392,6 @@ footer p{
     /* width: 250px; */
   }
 }
-
-
 
 .card-product img{
   width: 100%;
